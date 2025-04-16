@@ -226,7 +226,7 @@ nav a {
 .strategy-grid {
   display: flex;
   justify-content: center;
-  gap: 110px;
+  gap: 90px;
   position: relative;
   margin-top: -131px; 
   z-index: 2;
