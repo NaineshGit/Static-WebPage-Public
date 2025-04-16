@@ -1,262 +1,269 @@
 body {
-    font-family: 'Inter', sans-serif;
-    margin: 0;
-    background-color: #fff;
-    color: #1d1d1f;
-  }
-  header {
-    display: flex;
-    align-items: center;
-    padding: 22px 34px;
-    background: #fff;
-    border-bottom: 1px solid #eee;
-    position: relative;
-  }
-  
-  .logo {
-    margin-right: 40px;
-  }
-  
-  .header-center {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    align-items: center;
-    gap: 40px;
-  }
-  
-  nav {
-    display: flex;
-    gap: 45px;
-    justify-content: center;
-    flex: 1;
-  }
-  nav a {
-    text-decoration: none;
-    color: #7E75A7;
-    font-weight: 600;
-    font-size: 16px;
-  }
-  .btn-group {
-    display: flex;
-    gap: 16px;
-  }
-  .btn {
-    padding: 10px 24px;
-    border-radius: 9999px;
-    background-color: #002d3d;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
-  }
-  .active {
-    border: 1px solid #002d3d;
-    border-radius: 9999px;
-    padding: 10px 24px;
-    color: #002d3d;
-    background: transparent;
-    text-decoration: none;
-  }
-  .hero {
-    background-image: url('images/Frame-Header.png');
-    background-size: cover;
-    background-position: center;
-    padding: 100px 40px 60px;
-    text-align: center;
-    position: relative;
-  }
-  
-  .hero h1 {
-    font-size: 50px;
-    margin: 2px 1px 24px 1px;
-    font-weight: 700;
-    color: #032433;
-    text-shadow:0px 1px 0px;
-  }
-  .breadcrumb {
-    position: absolute;
-    bottom: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: #FA1239;
-    color: white;
-    padding: 8px 20px;
-    border-radius: 9px;
-    font-size: 19px;
-    font-weight: 500;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  background-color: #fff;
+  color: #1d1d1f;
 }
-  
-  .content {
-    padding: 40px;
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-  .content h2 {
-    font-size: 28px;
-  }
-  .highlight {
-    color: red;
-    font-weight: bold;
-  }
-  .section {
-    background: #ff2e2e;
-    color: white;
-    padding: 30px;
-    border-radius: 16px;
-    text-align: center;
-    margin: 40px 0;
-  }
-  .cards {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  .card {
-    background: white;
-    border-radius: 16px;
-    padding: 20px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    flex: 1;
-    min-width: 200px;
-    text-align: center;
-  }
-  .card img {
-    height: 60px;
-    margin-bottom: 16px;
-  }
-  .resume-section {
-    padding: 60px 20px;
-    background-color: #ffffff;
-    font-family: 'Inter', sans-serif;
-  }
-  
-  .resume-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1800px ;
-    margin: 0 auto;
-    flex-wrap: wrap;
-    gap: 40px;
-  }
-  
-  .resume-text {
-    flex: 1 1 550px;
-  }
-  
-  .resume-text h2 {
-    font-size: 3.2rem;
-    font-weight: 700;
-    color: #00223d;
-    line-height: 1.3;
-    margin-bottom: 20px;
-  }
-  
-  .resume-text h2 .highlight {
-    color: #ff1744;
-  }
-  
-  .resume-text h3 {
-    font-size: 1.6rem;
-    line-height:2.1;
-    font-weight: 600;
-    color: #00223d;
-    margin-bottom: 20px;
-  }
-  
-  .resume-text p {
-    font-size: 1.4rem;
-    color: #00223d;
-    line-height: 1.7;
-  }
-  
-  .resume-image {
-    flex: 1 1 400px;
-    text-align: center;
-  }
-  
-  .resume-image img {
-    max-width: 70%;
-    height: auto;
-  }
-  .strategy-wrapper {
-    padding: 0 20px;
-    max-width:1800px;
-    margin: 0 auto;
-    position: relative;
-    z-index: 1;
-  }
-  
-  .strategy-section {
-    background-color: #f9153e;
-    color: white;
-    padding:22px 0px 180px;
-    border-radius: 24px;
-    text-align: center;
-    position: relative;
-    z-index: 1;
-  }
-  
-  .strategy-section h2 {
-    font-size: 2.2rem;
-    font-weight: 700;
-    margin-bottom: 10px;
-  }
-  
-  .strategy-section p {
-    font-size: 1.1rem;
-    font-weight: 400;
-    margin-bottom: 0;
-    color: #ffdce1;
-    line-height:3.1;    
-  }
-  
-  .strategy-grid {
-    display: flex; 
-    /*flex-wrap: wrap;*/  
-    justify-content: center;
-    gap: 110px;
-    position: relative;
-    margin-top: -131px; /* lifts cards above red box */
-    z-index: 2;
-    padding-bottom: 60px; /* <-- keeps cards from touching bottom */
-  }
-  
-  .strategy-card {
-    background-color: white;
-    color: #0f1b2d;
-    border-radius: 20px;
-    width: 260px;
-    height: 265px; /* square-ish shape */
-    padding: 30px 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  .strategy-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
-  }
-  
-  .strategy-card img {
-    width: 151px;
-    height: 150px;
-    object-fit: contain;
-    margin: 0 auto 20px;
-    display: block;
-  }
-  
-  
-  .strategy-card h4 {
-    font-size:1.2rem;
-    font-weight: 400;
-    line-height: 1.4;
-  }
-  
+header {
+  display: flex;
+  align-items: center;
+  padding: 22px 34px;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  background-color: white; /* ensure background isn't transparent */
+  z-index: 999;
+}
+
+.logo {
+  margin-right: 40px;
+}
+
+.header-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
+  padding:20px 0 0px 54px; /* optional: adds spacing above and below */
+  flex: 1;
+}
+
+nav a {
+  text-decoration: none;
+  color: #7e75a7;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.btn-group {
+  display: flex;
+  gap: 16px;
+}
+.btn {
+  padding: 10px 24px;
+  border-radius: 9999px;
+  background-color: #002d3d;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+.active {
+  border: 1px solid #002d3d;
+  border-radius: 9999px;
+  padding: 10px 24px;
+  color: #002d3d;
+  background: transparent;
+  text-decoration: none;
+}
+.hero {
+  background-image: url("images/Frame-Header.png");
+  background-size: cover;
+  background-position: center;
+  padding: 100px 40px 60px;
+  text-align: center;
+  position: relative;
+}
+
+.hero h1 {
+  font-size: 50px;
+  margin: 2px 1px 24px 1px;
+  font-weight: 700;
+  color: #032433;
+  text-shadow: 0px 1px 0px;
+}
+.breadcrumb {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fa1239;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 9px;
+  font-size: 21px;
+  font-weight: 500;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.separator {
+  margin: 0 8px; /* or remove if it's adding too much space */
+}
+.content {
+  padding: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.content h2 {
+  font-size: 28px;
+}
+.highlight {
+  color: red;
+  font-weight: bold;
+}
+.section {
+  background: #ff2e2e;
+  color: white;
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+  margin: 40px 0;
+}
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  min-width: 200px;
+  text-align: center;
+}
+.card img {
+  height: 60px;
+  margin-bottom: 16px;
+}
+.resume-section {
+  padding: 60px 20px;
+  background-color: #ffffff;
+  font-family: "Inter", sans-serif;
+}
+
+.resume-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1800px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.resume-text {
+  flex: 1 1 550px;
+}
+
+.resume-text h2 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #00223d;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.resume-text h2 .highlight {
+  color: #ff1744;
+}
+
+.resume-text h3 {
+  font-size: 1.6rem;
+  line-height: 2.1;
+  font-weight: 600;
+  color: #00223d;
+  margin-bottom: 20px;
+}
+
+.resume-text p {
+  font-size: 1.5rem;
+  color: #00223d;
+  line-height: 1.7;
+}
+
+.resume-image {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.resume-image img {
+  max-width: 70%;
+  height: auto;
+}
+.strategy-wrapper {
+  padding: 0 20px;
+  max-width: 1800px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.strategy-section {
+  background-color: #f9153e;
+  color: white;
+  padding: 22px 0px 180px;
+  border-radius: 24px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.strategy-section h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.strategy-section p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 0;
+  color: #ffdce1;
+  line-height: 3.1;
+}
+
+.strategy-grid {
+  display: flex;
+  /*flex-wrap: wrap;*/
+  justify-content: center;
+  gap: 110px;
+  position: relative;
+  margin-top: -131px; /* lifts cards above red box */
+  z-index: 2;
+  padding-bottom: 60px; /* <-- keeps cards from touching bottom */
+}
+
+.strategy-card {
+  background-color: white;
+  color: #0f1b2d;
+  border-radius: 20px;
+  width: 260px;
+  height: 265px; /* square-ish shape */
+  padding: 30px 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.strategy-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.strategy-card img {
+  width: 151px;
+  height: 150px;
+  object-fit: contain;
+  margin: 0 auto 20px;
+  display: block;
+}
+
+.strategy-card h4 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
