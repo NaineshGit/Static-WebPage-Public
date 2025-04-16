@@ -193,7 +193,7 @@ body {
   .strategy-section {
     background-color: #f9153e;
     color: white;
-    padding: 80px 20px 160px; /* increased bottom padding */
+    padding:22px 0px 180px;
     border-radius: 24px;
     text-align: center;
     position: relative;
@@ -211,6 +211,7 @@ body {
     font-weight: 400;
     margin-bottom: 0;
     color: #ffdce1;
+    line-height:3.1;    
   }
   
   .strategy-grid {
@@ -219,7 +220,7 @@ body {
     justify-content: center;
     gap: 110px;
     position: relative;
-    margin-top: -100px; /* lifts cards above red box */
+    margin-top: -131px; /* lifts cards above red box */
     z-index: 2;
     padding-bottom: 60px; /* <-- keeps cards from touching bottom */
   }
